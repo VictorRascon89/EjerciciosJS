@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    
+    <!--ejercicio:
+    Escribe un programa que pueda calcular el area de 3 figuras geometricas, triangulo, rectangulo y circulo. En primer lugar pregunta de que figura se quiere calcular el area, despues solicita los datos que necesitas para calcularlo.
+        triangulo = b*h/2
+        rectangulo=b*h
+        circulo= pi*r2-->
+
+
+    <script>
+        let figure = prompt ("Introduce la figura geometrica que quieres calcular el area: triangle, rectangle or circle")
+        let base;
+        let height;
+        let radius;
+
+        switch(figure){
+            case "triangle":
+                base = prompt("Introduce una base del triangulo");
+                height = prompt("Introduce una altura del triangulo");
+                areaTriangle = (base * height)/2;
+                console.log("El área de tu triángulo es: ",areaTriangle);
+                break
+
+            case "rectangle":
+                base = rompt("Introduce una base del rectangle");
+                height = prompt("Introduce una altura del rectangle");
+                areaRectangle = (base * height);
+                console.log("El área de tu rectangle es: ",areaRectangle);
+                break
+
+            case "circle":
+                radius = prompt("Introduce el radio de tu circle");
+                areaCircle = Math.PI*Math.pow(radius,2);
+                console.log("El área de tu circle es: ",areaCircle);
+                  
+        }
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
